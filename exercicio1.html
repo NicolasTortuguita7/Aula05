@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+    <style>
+        *{
+            background-color: rgb(0, 0, 0);
+            margin: 0;
+            padding: 0;
+        }
+        h3{
+            text-align: center;
+            color: rgb(255, 255, 255);
+            font-size: 23px;
+        }
+        p{
+            text-align: center;
+            color: rgb(255, 255, 255);
+            
+        }
+        #seletor{
+            text-align: center;
+            font-size: 30px;
+            background-color: navy;
+            color: white;
+        }
+        #SA{
+            text-align: center;
+            font-size: 25px;
+            color: rgb(116, 38, 116);
+            background-color: rgb(0, 0, 0);
+        }
+        h4{
+            text-align: center;
+            color: rgb(255, 255, 255);
+        }
+        #SD{
+            text-align: center;
+            font-size: 25px;
+            color: rgb(33, 122, 138);
+            background-color: rgb(0, 0, 0);
+        }
+        #SFD{
+            text-align: center;
+            font-size: 25px;
+            color: rgb(87, 176, 114);
+            background-color: rgb(0, 0, 0);
+        }
+        #SAD{
+            text-align: center;
+            font-size: 25px;
+            color: rgb(216, 107, 118);
+            background-color: rgb(0, 0, 0);
+        }
+        #SiG{
+            text-align: center;
+            font-size: 25px;
+            color: rgb(9, 28, 153);
+            background-color: rgb(0, 0, 0);
+        }
+        #SP{
+            text-align: center;
+            font-size: 25px;
+            color: rgb(153, 9, 9);
+            background-color: rgb(0, 0, 0);
+        }
+        #SPE{
+            text-align: center;
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1 id="seletor">Seletores</h1>
+    <br>
+    <h4>O que são seletores CSS?</h4>
+    <br>
+    <p>Um seletor CSS é um padrão ou símbolo usado para indicar ao navegador quais elementos HTML de uma 
+    página devem receber os estilos definidos</p>
+    <br>
+    <h3 id="SA">Seletor de atibuto</h3>
+    <br>
+    <p>seletor de atributo no CSS serve para encontrar e estilizar elementos HTML com base na presença de um 
+    atributo específico ou no valor que esse atributo possui, 
+    sem depender exclusivamente de classes (.) ou IDs (#).</p>
+    <br>
+    <h3>exemplo</h3>
+    <p>a[target] {
+    </p><p>background-color: yellow;</p>
+    <hr>
+    <br>
+    <p>img[alt] {</p>
+    <p>border: 3px solid #3498db;}</p>
+    }</p>
+    <hr>
+    <p></p>
+    <br>
+    <h3 id="SD">Seletor de Descendente</h3>
+    <br>
+    <p>seletor de descendente no CSS serve para encontrar e estilizar elementos HTML que são descendentes de outro elemento, 
+    ou seja, estão dentro dele hierarquicamente.</p>
+    <br>
+    <h3>exemplo</h3>
+    <p>.container p {</p>
+    <p>color: blue;</p>
+    <p>font-weight: bold;</p>
+    <p></p>}</p>
+    <hr>
+    <br>
+    <h3 id="SFD">Seletor filho Direto</h3>
+    <br>
+    <p>O seletor de filho direto (representado pelo símbolo de maior que >) 
+    seleciona apenas os elementos que são filhos imediatos de um elemento pai específico</p>
+    <br>
+    <h3>exemplo</h3>
+    <p>.pai > p {</p>
+    <p>color: #e74c3c; /* Vermelho */</p>
+    <p>font-weight: bold;</p>
+    <p>}</p>
+    <hr>
+    <br>
+    <h3 id="SAD">Seletor Adjacente Direto</h3>
+    <br>
+    <p>O seletor de adjacente direto (representado pelo símbolo de mais +) seleciona um elemento que é imediatamente adjacente a outro elemento específico, 
+    ou seja, o primeiro elemento que vem logo após o segundo na hierarquia do HTML.</p>
+    <h3>exemplo</h3>
+    <p>.pai + p {</p>
+    <p>color: #2ecc71; /* Verde */</p>
+    <p>font-weight: bold;</p>
+    <p>}</p>
+    <hr>
+    <br>
+    <h3 id="SiG">Seletor de irmãos Gerais</h3>
+    <br>
+    <p>O seletor de irmãos gerais (representado pelo símbolo de til ~)seleciona todos os elementos que são irmãos de um elemento específico, 
+    ou seja, todos os elementos que compartilham o mesmo pai e vêm depois do elemento especificado na hierarquia do HTML.</p>
+    <h3>exemplo</h3>
+    <p>.pai ~ p {</p>
+    <p>color: #f39c12; /* Laranja */</p>
+    <p>font-weight: bold;</p>
+    <p>}</p>
+    <hr>
+    <br>
+    <h3 id="SP">Seletor de Pseudoclasses</h3>
+    <br>
+    <p>O seletor de pseudoclasse no CSS serve para selecionar elementos HTML com base em seu estado ou posição em relação a outros elementos, 
+    permitindo aplicar estilos específicos a esses elementos sem a necessidade de adicionar classes ou IDs adicionais.</p>
+    <h3>exemplo</h3>
+    <p>a:hover {</p>
+    <p>color: red;</p>
+    <p>}</p>
+    <hr>
+    <br>
+    <h3 id="SPE">Seletor de Pseudoelementos</h3>
+    <br>
+    <p>O seletor de pseudoelementos no CSS serve para selecionar e estilizar partes específicas de elementos HTML, 
+    como o primeiro caractere de um parágrafo ou o conteúdo antes de um elemento.</p>
+    <h3>exemplo</h3>
+    <p>p::first-letter {</p>
+    <p>color: #e74c3c; /* Vermelho */</p>
+    <p>font-size: 2em;</p>
+    <p>}</p>
+    <br>
+    <hr>
+    <br>
+</body>
+</html>
